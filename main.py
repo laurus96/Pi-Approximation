@@ -4,6 +4,8 @@ import signal
 from time import sleep
 from os import system, name
 
+import PyQt5
+
 pi = float(0.0)
 
 def signal_handler(sig, frame):
@@ -45,7 +47,7 @@ if __name__ == '__main__':
 
         pi = pi_app * 4
         print(pi)
-        sleep(0.6)
+        sleep(0.5)
         clear()
 
         signal.signal(signal.SIGINT, signal_handler)
