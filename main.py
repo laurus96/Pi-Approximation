@@ -4,7 +4,6 @@ import signal
 from time import sleep
 from os import system, name
 
-import PyQt5
 
 pi = float(0.0)
 
